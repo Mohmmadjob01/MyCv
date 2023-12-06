@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Contact>
+
+<div id="contact">
+    <div class="bg-color-sky-light">
+        <div class="container content-lg">
+            <div class="row margin-b-40">
+                <div class="col-sm-6">
+                    <h2>Contact Me</h2>
+                </div>
+            </div>
+            @foreach (var i in Model)
+            {
+                <div class="row">
+                    <div class="col-md-3 col-xs-6 md-margin-b-30">
+                        <h4>Location</h4>
+                        <p>@i.Location</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 md-margin-b-30">
+                        <h4>Phone</h4>
+                        <p>@i.Phone</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <h4>Email</h4>
+                        <p>@i.Email</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <h4>Web</h4>
+                        <a href="@i.WebLink">@i.Web</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

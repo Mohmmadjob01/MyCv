@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Experience>
+
+<div id="Experience">
+    <div class="bg-color-sky-light" data-auto-height="true">
+        <div class="container content-lg">
+            <div class="row row-space-2 margin-b-4">
+                <h2>Experience</h2>
+               @foreach (var i in Model)
+                {
+                    <div class="progress-box">
+                        <h4>@i.ExpName </h4>
+                        <h6>@i.ExpDescription</h6>
+
+                    </div>
+                }
+            </div>
+            <!--// end row -->
+        </div>
+    </div>
+</div>

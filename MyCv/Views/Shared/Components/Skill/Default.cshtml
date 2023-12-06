@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Skill>
+
+<div id="about">
+        <div class="container content-lg">
+            <div class="row">
+            <div class="col-sm-7">
+        
+                <h2>My Skills</h2>
+                @foreach (var i in Model)
+                {
+                        <div class="progress-box">
+                            <h5>@i.SkillName</h5>
+                        </div>
+                }
+                </div>
+            </div>
+        </div>
+    </div>

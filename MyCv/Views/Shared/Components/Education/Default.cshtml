@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Education>
+
+    <div id="Education">
+        <div class="container content-lg">
+            <div class="row">
+
+                <div class="col-sm-7">
+                    <div class="section-seperator margin-b-50">
+                        <div class="margin-b-50">
+                            <div class="margin-b-30">
+                                <h2>Education</h2>
+                               @foreach (var i in Model)
+                            {
+                                 <p>
+                                     @i.EducationDescription</p>
+                            }
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </div>
